@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TbsDisk</string>
+    <string name="title_home">网盘</string>
+    <string name="title_dashboard">设置</string>
+    <string name="title_notifications">通知</string>
+    <string name="list_view_empty">目录为空</string>
+    <string name="setting_more_set">设置</string>
+    <string name="logout">注销</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/nav_title_layout"
+            layout="@layout/nav_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:weightSum="3"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/create_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/main_list_header_create_folder"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/main_list_header_rank"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/main_list_header_search"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <include
+            android:id="@+id/list_empty_stub"
+            layout="@layout/tab_disk_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="70.0dip"
+            android:layout_marginTop="70.0dip"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
